@@ -28,6 +28,6 @@
 
 **如果这款软件对你有帮助请我喝杯咖啡吧，我会非常感谢的！**
 
-<img src="https://raw.githubusercontent.com/Imgaojp/PTClient/master/img/wechatQR.png" width="150" height="200" alt="图片描述文字"/>
-<img src="https://raw.githubusercontent.com/Imgaojp/PTClient/master/img/alipayQR.jpg" width="150" height="200" alt="图片描述文字"/>
+<img src="https://raw.githubusercontent.com/Imgaojp/PTClient/master/img/wechatQR.png"  height="400" alt="图片描述文字"/>
+<img src="https://raw.githubusercontent.com/Imgaojp/PTClient/master/img/alipayQR.jpg" height="400" alt="图片描述文字"/>
 
