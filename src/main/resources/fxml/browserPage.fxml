@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="box" xmlns="http://javafx.com/javafx/8"
+      fx:controller="cn.gabongao.controller.BrowserPageController">
+    <children>
+        <!--<TabPane stylesheets="@../css/button.css" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">-->
+        <!--<tabs>-->
+        <!--<Tab text="Untitled Tab 1">-->
+        <!--<content>-->
+        <!--<AnchorPane>-->
+        <!--<children>-->
+        <!--<WebView fx:id="browser" />-->
+        <!--</children>-->
+        <!--</AnchorPane>-->
+        <!--</content>-->
+        <!--</Tab>-->
+        <!--<Tab text="Untitled Tab 2">-->
+        <!--<content>-->
+        <!--<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" />-->
+        <!--</content>-->
+        <!--</Tab>-->
+        <!--</tabs>-->
+        <!--</TabPane>-->
+        <!--<Button fx:id="cookie" mnemonicParsing="false" text="Button" />-->
+    </children>
+</VBox>

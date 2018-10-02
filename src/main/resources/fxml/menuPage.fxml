@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="30.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="cn.gabongao.controller.MenuController">
+    <children>
+        <AnchorPane>
+            <children>
+                <Button fx:id="info" mnemonicParsing="false" prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/info.png');" stylesheets="@../css/button.css"
+                        AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="个人信息"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="browser" layoutX="126.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/browser.png');" stylesheets="@../css/button.css"
+                        AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="浏览器"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="search" layoutX="311.0" layoutY="8.0" minHeight="0.0" mnemonicParsing="false"
+                        prefHeight="23.0" prefWidth="23.0" style="-fx-background-image: url('/img/search.png');"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="84.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="聚合搜索"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="hide" alignment="CENTER_RIGHT" layoutX="1156.0" layoutY="6.0" mnemonicParsing="false"
+                        prefHeight="22.0" prefWidth="22.0" style="-fx-background-image: url('/img/hide.png');"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="116.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="隐藏个人信息"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="settings" alignment="CENTER_RIGHT" layoutX="1352.0" layoutY="4.0" mnemonicParsing="false"
+                        prefHeight="22.0" prefWidth="22.0" style="-fx-background-image: url('/img/setting.png');"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="84.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="设置"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="discuss" alignment="CENTER_RIGHT" layoutX="1286.0" layoutY="3.0" mnemonicParsing="false"
+                        prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/chat.png'); -fx-background-size: 24;"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="52.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="讨论"/>
+                    </tooltip>
+                </Button>
+                <Button alignment="CENTER_RIGHT" disable="true" layoutX="1212.0" mnemonicParsing="false" opacity="0.0"
+                        prefHeight="27.0" text="Preium" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="160.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="高级功能"/>
+                    </tooltip>
+                </Button>
+                <Label fx:id="test" alignment="CENTER" layoutX="620.0" layoutY="3" text="PTClient"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="17.0"/>
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/iconNoBG.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Label>
+                <Button fx:id="refresh" alignment="CENTER_RIGHT" layoutX="1296.0" layoutY="13.0" mnemonicParsing="false"
+                        onMouseClicked="#update" prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/refresh.png'); -fx-background-size: 20;"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="148.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="全部刷新"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="snapshot" alignment="CENTER_RIGHT" layoutX="1306.0" layoutY="23.0"
+                        mnemonicParsing="false" prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/snapshot.png'); -fx-background-size: 20;"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="180.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="截图"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="help" alignment="CENTER_RIGHT" layoutX="1316.0" layoutY="33.0" mnemonicParsing="false"
+                        prefHeight="22.0" prefWidth="22.0"
+                        style="-fx-background-image: url('/img/help.png'); -fx-background-size: 20;"
+                        stylesheets="@../css/button.css" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="20.0"
+                        AnchorPane.topAnchor="5.0">
+                    <tooltip>
+                        <Tooltip styleClass="tooltip" text="帮助"/>
+                    </tooltip>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

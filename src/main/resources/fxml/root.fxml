@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:id="root" minHeight="300.0" minWidth="500.0" prefHeight="700.0"
+      prefWidth="1400.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="cn.gabongao.controller.RootController">
+    <children>
+
+        <fx:include fx:id="menuPage" source="menuPage.fxml" visible="true"/>
+        <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+            <children>
+                <fx:include fx:id="searchPage" source="searchPage.fxml" visible="false"/>
+                <fx:include source="browserPage.fxml" visible="false" fx:id="browserPage"/>
+                <fx:include fx:id="infoPage" source="infoPage.fxml" visible="true"/>
+                <fx:include source="help.fxml" fx:id="helpPage" visible="false"/>
+            </children>
+        </StackPane>
+
+
+    </children>
+</VBox>

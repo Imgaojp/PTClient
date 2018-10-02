@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="cn.gabongao.controller.AddHttpOnlyController">
+    <children>
+        <TextField fx:id="cookie" layoutX="134.0" layoutY="495.0" prefHeight="23.0" prefWidth="734.0"
+                   promptText="请输入Cookie"/>
+        <Label layoutX="70.0" layoutY="499.0" text="Cookie"/>
+        <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../img/howtoaddcookie.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="button" layoutX="896.0" layoutY="495.0" mnemonicParsing="false" text="添加"/>
+        <Label layoutX="144.0" layoutY="426.0" prefHeight="44.0" prefWidth="713.0"
+               text="由于某些站点采用HttpOnly，因此需使用Chrome等浏览器按照如上图所示方式抓包，复制cookie后粘贴到下方文本框中，再点击添加" wrapText="true"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+<SplitPane xmlns:fx="http://javafx.com/fxml/1" fx:id="infoPage" dividerPositions="0.5"
+           maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL"
+           VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8"
+           fx:controller="cn.gabongao.controller.InfoPageController">
+    <items>
+        <TableView fx:id="table" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="site" prefWidth="70.0" text="站点"/>
+                <TableColumn fx:id="userName" prefWidth="70.0" text="用户名" />
+                <TableColumn fx:id="userID" prefWidth="70.0" text="UID" />
+                <TableColumn fx:id="upload" text="上传量" />
+                <TableColumn fx:id="download" text="下载量" />
+                <TableColumn fx:id="shareRatio" text="分享率" />
+                <TableColumn fx:id="bonus" prefWidth="70.0" text="魔力值" />
+                <TableColumn fx:id="uploadCount" prefWidth="50.0" text="做种数" />
+                <TableColumn fx:id="uploadTime" prefWidth="110.0" text="做种时间" />
+                <TableColumn fx:id="downloadTime" prefWidth="110.0" text="下载时间" />
+                <TableColumn fx:id="joinDate" prefWidth="150.0" text="加入天数" />
+                <TableColumn fx:id="grade" prefWidth="90.0" text="等级" />
+                <TableColumn fx:id="inviteCount" prefWidth="100.0" text="邀请数" />
+                <TableColumn fx:id="state" prefWidth="70.0" text="当前状态" />
+            </columns>
+        </TableView>
+        <SplitPane dividerPositions="0.43" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <items>
+                <TableView fx:id="recentTable" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" tableMenuButtonVisible="true">
+                    <columns>
+                        <TableColumn fx:id="site2" text="站点" />
+                        <TableColumn fx:id="upload2" text="上传量" />
+                        <TableColumn fx:id="download2" text="下载量" />
+                        <TableColumn fx:id="shareRatio2" prefWidth="55.0" text="分享率" />
+                        <TableColumn fx:id="bonus2" prefWidth="55.0" text="魔力" />
+                        <TableColumn fx:id="uploadCount2" prefWidth="50.0" text="做种数" />
+                        <TableColumn fx:id="uploadTime2" text="做种时间" />
+                        <TableColumn fx:id="date" text="记录日期" />
+                    </columns>
+                </TableView>
+                <SplitPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL">
+                    <items>
+                        <WebView fx:id="chart" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0"
+                                 prefWidth="-1.0"/>
+                    </items>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </items>
+</SplitPane>
